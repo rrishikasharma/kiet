@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<conio.h>
+int main(){
+clrscr();
+int age,smoker;
+int discount=0;
+char gen;
+long int insurance;
+long int pen=0;
+float amount;
+printf("\n enter your gender as M or F:");
+scanf("%c",&gen);
+printf("enter your age:");
+scanf("%d",&age);
+printf("enter 1 if you smoke and 0 if you do not:");
+scanf("%d",&smoker);
+if(20<=age&&age<=30){
+insurance=10000;
+}
+else if(31<=age&&age<=40){
+insurance=15000;
+}
+else if(41<=age&&age<=50){
+insurance=20000;
+}
+else if(51<=age&&age<=60){
+insurance=40000;
+}
+else{
+printf("the insurance of age above 60 is 0 \
+\n in the insurance for age less than 20 is 0");
+}
+switch(gen){
+case'F'||'f':{
+discount=10;
+}
+}
+if(smoker==1){
+pen=10;
+}
+printf("insurance is %ld",insurance);
+printf("\n discount is %ld", discount);
+printf("\n penality is %ld",pen);
+amount=insurance+(insurance*(discount/100))-(insurance*(pen/100));
+printf("\n amount= % ld",amount);
+getch();
+return 0;
+}
+
+
+
+
