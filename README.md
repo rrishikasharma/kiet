@@ -1,2 +1,3 @@
 # kiet
-what we do in our lab sem 1
+All possible ques cover in C and Java
+
